@@ -1,0 +1,12 @@
+{
+ "loaded": {
+  "sales": 44305,
+  "products": 38,
+  "inventory": 38,
+  "purchases": 948,
+  "expenses": 59,
+  "customers": 30,
+  "khata_payments": 76
+ },
+ "as_of": "2026-11-13"
+}

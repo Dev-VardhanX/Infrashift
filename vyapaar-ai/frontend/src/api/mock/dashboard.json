@@ -1,0 +1,383 @@
+{
+ "as_of": "2026-11-13",
+ "period": {
+  "from": "2026-10-15",
+  "to": "2026-11-13"
+ },
+ "kpis": {
+  "revenue": {
+   "value": 1432103,
+   "prev": 1228253,
+   "delta_pct": 16.6
+  },
+  "gross_profit": {
+   "value": 105673,
+   "prev": 85094,
+   "delta_pct": 24.2
+  },
+  "gross_margin_pct": {
+   "value": 7.75,
+   "prev": 7.29,
+   "delta_pp": 0.46
+  },
+  "invoices": {
+   "value": 3863,
+   "prev": 3579,
+   "delta_pct": 7.9
+  },
+  "avg_bill": {
+   "value": 370.7,
+   "prev": 343.2,
+   "delta_pct": 8.0
+  },
+  "stock_value": {
+   "value": 265385
+  },
+  "khata_outstanding": {
+   "value": 35248
+  }
+ },
+ "series": {
+  "daily_revenue": [
+   {
+    "date": "2026-10-15",
+    "revenue": 39659
+   },
+   {
+    "date": "2026-10-16",
+    "revenue": 39732
+   },
+   {
+    "date": "2026-10-17",
+    "revenue": 45232
+   },
+   {
+    "date": "2026-10-18",
+    "revenue": 48612
+   },
+   {
+    "date": "2026-10-19",
+    "revenue": 36441
+   },
+   {
+    "date": "2026-10-20",
+    "revenue": 40427
+   },
+   {
+    "date": "2026-10-21",
+    "revenue": 39548
+   },
+   {
+    "date": "2026-10-22",
+    "revenue": 31093
+   },
+   {
+    "date": "2026-10-23",
+    "revenue": 33263
+   },
+   {
+    "date": "2026-10-24",
+    "revenue": 44970
+   },
+   {
+    "date": "2026-10-25",
+    "revenue": 58654
+   },
+   {
+    "date": "2026-10-26",
+    "revenue": 49704
+   },
+   {
+    "date": "2026-10-27",
+    "revenue": 51848
+   },
+   {
+    "date": "2026-10-28",
+    "revenue": 51427
+   },
+   {
+    "date": "2026-10-29",
+    "revenue": 55089
+   },
+   {
+    "date": "2026-10-30",
+    "revenue": 66078
+   },
+   {
+    "date": "2026-10-31",
+    "revenue": 71002
+   },
+   {
+    "date": "2026-11-01",
+    "revenue": 76234
+   },
+   {
+    "date": "2026-11-02",
+    "revenue": 61460
+   },
+   {
+    "date": "2026-11-03",
+    "revenue": 63849
+   },
+   {
+    "date": "2026-11-04",
+    "revenue": 64738
+   },
+   {
+    "date": "2026-11-05",
+    "revenue": 55055
+   },
+   {
+    "date": "2026-11-06",
+    "revenue": 56034
+   },
+   {
+    "date": "2026-11-07",
+    "revenue": 59185
+   },
+   {
+    "date": "2026-11-08",
+    "revenue": 55106
+   },
+   {
+    "date": "2026-11-09",
+    "revenue": 29377
+   },
+   {
+    "date": "2026-11-10",
+    "revenue": 28745
+   },
+   {
+    "date": "2026-11-11",
+    "revenue": 30143
+   },
+   {
+    "date": "2026-11-12",
+    "revenue": 20740
+   },
+   {
+    "date": "2026-11-13",
+    "revenue": 28658
+   }
+  ],
+  "by_category": [
+   {
+    "category": "Staples",
+    "revenue": 359216,
+    "profit": 22352
+   },
+   {
+    "category": "Oil & Ghee",
+    "revenue": 249105,
+    "profit": 10831
+   },
+   {
+    "category": "Dairy & Eggs",
+    "revenue": 153280,
+    "profit": 9366
+   },
+   {
+    "category": "Dry Fruits",
+    "revenue": 145330,
+    "profit": 16461
+   },
+   {
+    "category": "Personal & Home Care",
+    "revenue": 125055,
+    "profit": 8716
+   },
+   {
+    "category": "Snacks & Biscuits",
+    "revenue": 124047,
+    "profit": 7308
+   },
+   {
+    "category": "Beverages",
+    "revenue": 113165,
+    "profit": 7026
+   },
+   {
+    "category": "Sweets & Chocolates",
+    "revenue": 93600,
+    "profit": 8877
+   },
+   {
+    "category": "Puja & Decor",
+    "revenue": 69305,
+    "profit": 14842
+   }
+  ],
+  "payment_mix": [
+   {
+    "mode": "upi",
+    "revenue": 878737,
+    "share_pct": 61.4
+   },
+   {
+    "mode": "cash",
+    "revenue": 438572,
+    "share_pct": 30.6
+   },
+   {
+    "mode": "card",
+    "revenue": 82721,
+    "share_pct": 5.8
+   },
+   {
+    "mode": "khata",
+    "revenue": 32073,
+    "share_pct": 2.2
+   }
+  ],
+  "top_products": [
+   {
+    "sku": "ATT01",
+    "name": "Aashirvaad Atta 5kg",
+    "revenue": 133980,
+    "profit": 6681,
+    "units": 462
+   },
+   {
+    "sku": "GHE01",
+    "name": "Amul Ghee 1L",
+    "revenue": 120960,
+    "profit": 4701,
+    "units": 189
+   },
+   {
+    "sku": "RIC01",
+    "name": "India Gate Basmati Rice 5kg",
+    "revenue": 116725,
+    "profit": 8214,
+    "units": 161
+   },
+   {
+    "sku": "OIL01",
+    "name": "Fortune Sunflower Oil 1L",
+    "revenue": 77250,
+    "profit": 2531,
+    "units": 515
+   },
+   {
+    "sku": "DRY01",
+    "name": "Almonds 250g",
+    "revenue": 65415,
+    "profit": 7532,
+    "units": 267
+   },
+   {
+    "sku": "DRY02",
+    "name": "Cashew 250g",
+    "revenue": 61655,
+    "profit": 6544,
+    "units": 209
+   },
+   {
+    "sku": "TEA01",
+    "name": "Tata Tea Gold 500g",
+    "revenue": 58900,
+    "profit": 3944,
+    "units": 190
+   },
+   {
+    "sku": "DAL01",
+    "name": "Toor Dal 1kg",
+    "revenue": 58575,
+    "profit": 3214,
+    "units": 355
+   },
+   {
+    "sku": "BUT01",
+    "name": "Amul Butter 500g",
+    "revenue": 53010,
+    "profit": 1698,
+    "units": 186
+   },
+   {
+    "sku": "MLK01",
+    "name": "Amul Taza Milk 500ml",
+    "revenue": 52432,
+    "profit": 2843,
+    "units": 1808
+   }
+  ],
+  "top_products_by_profit": [
+   {
+    "sku": "RIC01",
+    "name": "India Gate Basmati Rice 5kg",
+    "revenue": 116725,
+    "profit": 8214,
+    "units": 161
+   },
+   {
+    "sku": "DRY01",
+    "name": "Almonds 250g",
+    "revenue": 65415,
+    "profit": 7532,
+    "units": 267
+   },
+   {
+    "sku": "ATT01",
+    "name": "Aashirvaad Atta 5kg",
+    "revenue": 133980,
+    "profit": 6681,
+    "units": 462
+   },
+   {
+    "sku": "DRY02",
+    "name": "Cashew 250g",
+    "revenue": 61655,
+    "profit": 6544,
+    "units": 209
+   },
+   {
+    "sku": "GHE01",
+    "name": "Amul Ghee 1L",
+    "revenue": 120960,
+    "profit": 4701,
+    "units": 189
+   },
+   {
+    "sku": "PUJ04",
+    "name": "Tealight Candles 50pc",
+    "revenue": 18620,
+    "profit": 4439,
+    "units": 133
+   },
+   {
+    "sku": "PUJ02",
+    "name": "Agarbatti Cycle Pure 100s",
+    "revenue": 31065,
+    "profit": 4140,
+    "units": 327
+   },
+   {
+    "sku": "TEA01",
+    "name": "Tata Tea Gold 500g",
+    "revenue": 58900,
+    "profit": 3944,
+    "units": 190
+   },
+   {
+    "sku": "WAT01",
+    "name": "Bisleri Water 1L",
+    "revenue": 26880,
+    "profit": 3934,
+    "units": 1344
+   },
+   {
+    "sku": "CHO01",
+    "name": "Cadbury Dairy Milk 52g",
+    "revenue": 42650,
+    "profit": 3866,
+    "units": 853
+   }
+  ]
+ },
+ "markers": [
+  {
+   "date": "2026-11-08",
+   "label": "Diwali"
+  }
+ ]
+}

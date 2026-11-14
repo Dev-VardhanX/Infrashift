@@ -1,0 +1,384 @@
+{
+ "replies": [
+  {
+   "keys": [
+    "diwali",
+    "compare",
+    "week"
+   ],
+   "answer": "Diwali week (1-7 Nov) revenue was Rs 4,36,555 against Rs 4,03,802 the week before, up 8.1%. Dry Fruits, Puja & Decor and Sweets drove most of the lift.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Category",
+      "Diwali week",
+      "Prior week"
+     ],
+     "rows": [
+      [
+       "Dry Fruits",
+       "57,630",
+       "14,185"
+      ],
+      [
+       "Puja & Decor",
+       "35,135",
+       "8,715"
+      ],
+      [
+       "Sweets & Chocolates",
+       "36,815",
+       "12,560"
+      ]
+     ]
+    }
+   ],
+   "calc": [
+    {
+     "tool": "compare_periods",
+     "args": {
+      "metric": "revenue",
+      "a": "diwali_week",
+      "b": "prev week"
+     },
+     "row_count": 9,
+     "method": "Sum of qty x unit_price per period, delta = (A-B)/B"
+    }
+   ],
+   "validated": true
+  },
+  {
+   "keys": [
+    "run out",
+    "khatam",
+    "stock",
+    "restock",
+    "next 3 days"
+   ],
+   "answer": "Sugar 1kg is already out of stock and Amul Ghee 1L has about 1.1 days left. Almonds, Cashew and Aashirvaad Atta are also under 4 days. Diyas and Rangoli are excluded because Diwali is over.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Item",
+      "Stock",
+      "Days of cover",
+      "Status"
+     ],
+     "rows": [
+      [
+       "Sugar 1kg",
+       "0",
+       "0.0",
+       "OUT"
+      ],
+      [
+       "Amul Ghee 1L",
+       "7",
+       "1.1",
+       "CRITICAL"
+      ],
+      [
+       "Almonds 250g",
+       "",
+       "2.7",
+       "CRITICAL"
+      ],
+      [
+       "Cashew 250g",
+       "",
+       "2.8",
+       "CRITICAL"
+      ],
+      [
+       "Aashirvaad Atta 5kg",
+       "",
+       "3.5",
+       "LOW"
+      ]
+     ]
+    }
+   ],
+   "calc": [
+    {
+     "tool": "restock_plan",
+     "args": {
+      "horizon_days": 3
+     },
+     "row_count": 5,
+     "method": "Days of cover = stock / forecast daily demand (0.6 x last 14d + 0.4 x last 28d)"
+    }
+   ],
+   "validated": true
+  },
+  {
+   "keys": [
+    "dead",
+    "slow",
+    "stuck money",
+    "nahi bik"
+   ],
+   "answer": "3 products are dead stock and Rs 45,556 is locked in them: Real Mango Juice 1L, Rooh Afza 750ml and Glucon-D Orange 500g.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Item",
+      "In stock",
+      "Sold last 30d"
+     ],
+     "rows": [
+      [
+       "Real Mango Juice 1L",
+       "96",
+       "4"
+      ],
+      [
+       "Rooh Afza 750ml",
+       "102",
+       "1"
+      ],
+      [
+       "Glucon-D Orange 500g",
+       "101",
+       "3"
+      ]
+     ]
+    }
+   ],
+   "calc": [
+    {
+     "tool": "dead_stock",
+     "args": {
+      "days": 30,
+      "max_sell_through": 0.05
+     },
+     "row_count": 3,
+     "method": "Stock > 0 and units sold in 30d <= 5% of stock; capital = stock x cost price"
+    }
+   ],
+   "validated": true
+  },
+  {
+   "keys": [
+    "owes",
+    "owe",
+    "45 days",
+    "overdue"
+   ],
+   "answer": "7 customers owe Rs 31,369 for more than 45 days. The largest is Anil Gupta at Rs 9,685.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Customer",
+      "Balance (Rs)",
+      "Days"
+     ],
+     "rows": [
+      [
+       "Anil Gupta",
+       "9,685",
+       "108"
+      ],
+      [
+       "Meena Kohli",
+       "8,270",
+       "93"
+      ],
+      [
+       "Vikas Yadav",
+       "4,922",
+       "108"
+      ]
+     ]
+    }
+   ],
+   "calc": [
+    {
+     "tool": "khata_overdue",
+     "args": {
+      "min_days": 45
+     },
+     "row_count": 7,
+     "method": "Balance > 0 and days since last payment > 45"
+    }
+   ],
+   "validated": true
+  },
+  {
+   "keys": [
+    "oil",
+    "margin",
+    "munafa"
+   ],
+   "answer": "Fortune Sunflower Oil cost rose from Rs 128 to Rs 141, so its margin on taxable value fell from 10.4% to 1.3%. Price is capped at MRP Rs 150, so negotiate the cost or push Saffola Gold.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Metric",
+      "Before",
+      "Now"
+     ],
+     "rows": [
+      [
+       "Cost per unit",
+       "128",
+       "141"
+      ],
+      [
+       "Margin",
+       "10.4%",
+       "1.3%"
+      ]
+     ]
+    }
+   ],
+   "calc": [
+    {
+     "tool": "margin_by_product",
+     "args": {
+      "n": 5
+     },
+     "row_count": 5,
+     "method": "Margin = (taxable - COGS) / taxable"
+    },
+    {
+     "tool": "compare_periods",
+     "args": {
+      "metric": "margin",
+      "group_by": "sku"
+     },
+     "row_count": 5,
+     "method": "Before vs after cost change"
+    }
+   ],
+   "validated": true
+  },
+  {
+   "keys": [
+    "expense",
+    "unusual",
+    "kharcha"
+   ],
+   "answer": "Electricity in October was Rs 9,718 against a usual Rs 5,305, and Delivery Fuel was Rs 5,100 against Rs 3,020.",
+   "blocks": [
+    {
+     "type": "table",
+     "columns": [
+      "Category",
+      "Oct (Rs)",
+      "Median (Rs)",
+      "Ratio"
+     ],
+     "rows": [
+      [
+       "Electricity",
+       "9,718",
+       "5,305",
+       "1.8x"
+      ],
+      [
+       "Delivery Fuel",
+       "5,100",
+       "3,020",
+       "1.7x"
+      ]
+     ]
+    }
+   ],
+   "calc": [
+    {
+     "tool": "expense_summary",
+     "args": {
+      "flag_anomalies": true
+     },
+     "row_count": 2,
+     "method": "Month total > 1.5x median of other months"
+    }
+   ],
+   "validated": true
+  },
+  {
+   "keys": [
+    "upi",
+    "cash",
+    "split",
+    "payment"
+   ],
+   "answer": "In the last 30 days UPI was 61.4% of revenue, cash 30.6%, card 5.8% and khata 2.2%.",
+   "blocks": [
+    {
+     "type": "chart",
+     "kind": "bar",
+     "x": "mode",
+     "y": "share_pct",
+     "data": [
+      {
+       "mode": "UPI",
+       "share_pct": 61.4
+      },
+      {
+       "mode": "Cash",
+       "share_pct": 30.6
+      },
+      {
+       "mode": "Card",
+       "share_pct": 5.8
+      },
+      {
+       "mode": "Khata",
+       "share_pct": 2.2
+      }
+     ]
+    }
+   ],
+   "calc": [
+    {
+     "tool": "payment_mix",
+     "args": {
+      "from": "2026-10-15",
+      "to": "2026-11-13"
+     },
+     "row_count": 4,
+     "method": "Revenue share by payment_mode"
+    }
+   ],
+   "validated": true
+  },
+  {
+   "keys": [
+    "udhaar",
+    "udhar",
+    "baaki",
+    "baki"
+   ],
+   "answer": "Kul udhaar baaki Rs 35,248 hai. Isme se Rs 31,369 pichhle 45 din se zyada purana hai.",
+   "blocks": [],
+   "calc": [
+    {
+     "tool": "khata_overdue",
+     "args": {
+      "min_days": 0
+     },
+     "row_count": 13,
+     "method": "Sum of customers.khata_balance; overdue = no payment in 45+ days"
+    }
+   ],
+   "validated": true
+  }
+ ],
+ "fallback": {
+  "answer": "I can only answer from your store data and I could not match that question to a tool. Try one of the suggestions below.",
+  "blocks": [],
+  "calc": [],
+  "validated": true,
+  "suggestions": [
+   "Which items will run out in the next 3 days?",
+   "Who owes me money for more than 45 days?",
+   "UPI vs cash split in the last 30 days?"
+  ]
+ }
+}
