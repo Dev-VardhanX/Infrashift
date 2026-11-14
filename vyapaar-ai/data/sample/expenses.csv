@@ -1,0 +1,60 @@
+date,category,amount,payment_mode,note
+2026-05-15,Delivery Fuel,3020,cash,Home delivery bike
+2026-05-18,Packaging,729,cash,Carry bags
+2026-05-18,Phone & Internet,899,upi,Broadband
+2026-05-25,Packaging,748,cash,Carry bags
+2026-06-01,Packaging,708,cash,Carry bags
+2026-06-01,Rent,28000,bank_transfer,Shop rent
+2026-06-05,Staff Salary,18000,cash,2 helpers
+2026-06-08,Packaging,708,cash,Carry bags
+2026-06-10,Electricity,5327,upi,BSES bill
+2026-06-15,Delivery Fuel,3190,cash,Home delivery bike
+2026-06-15,Packaging,652,cash,Carry bags
+2026-06-18,Phone & Internet,899,upi,Broadband
+2026-06-22,Packaging,711,cash,Carry bags
+2026-06-29,Packaging,727,cash,Carry bags
+2026-07-01,Rent,28000,bank_transfer,Shop rent
+2026-07-05,Staff Salary,18000,cash,2 helpers
+2026-07-06,Packaging,727,cash,Carry bags
+2026-07-10,Electricity,5744,upi,BSES bill
+2026-07-13,Packaging,764,cash,Carry bags
+2026-07-14,Repairs,2500,cash,Deep freezer repair
+2026-07-15,Delivery Fuel,2944,cash,Home delivery bike
+2026-07-18,Phone & Internet,899,upi,Broadband
+2026-07-20,Packaging,639,cash,Carry bags
+2026-07-27,Packaging,635,cash,Carry bags
+2026-08-01,Rent,28000,bank_transfer,Shop rent
+2026-08-03,Packaging,667,cash,Carry bags
+2026-08-05,Staff Salary,18000,cash,2 helpers
+2026-08-10,Electricity,5305,upi,BSES bill
+2026-08-10,Packaging,744,cash,Carry bags
+2026-08-15,Delivery Fuel,2990,cash,Home delivery bike
+2026-08-17,Packaging,740,cash,Carry bags
+2026-08-18,Phone & Internet,899,upi,Broadband
+2026-08-24,Packaging,698,cash,Carry bags
+2026-08-31,Packaging,664,cash,Carry bags
+2026-09-01,Rent,28000,bank_transfer,Shop rent
+2026-09-03,Licence & Fees,3500,upi,FSSAI renewal
+2026-09-05,Staff Salary,18000,cash,2 helpers
+2026-09-07,Packaging,733,cash,Carry bags
+2026-09-10,Electricity,4340,upi,BSES bill
+2026-09-14,Packaging,650,cash,Carry bags
+2026-09-15,Delivery Fuel,3139,cash,Home delivery bike
+2026-09-18,Phone & Internet,899,upi,Broadband
+2026-09-21,Packaging,618,cash,Carry bags
+2026-09-28,Packaging,756,cash,Carry bags
+2026-10-01,Rent,28000,bank_transfer,Shop rent
+2026-10-05,Packaging,671,cash,Carry bags
+2026-10-05,Staff Salary,18000,cash,2 helpers
+2026-10-10,Electricity,9718,upi,Compressor fault - high bill
+2026-10-12,Packaging,618,cash,Carry bags
+2026-10-15,Delivery Fuel,5100,cash,Home delivery bike
+2026-10-18,Phone & Internet,899,upi,Broadband
+2026-10-19,Packaging,719,cash,Carry bags
+2026-10-26,Packaging,796,cash,Carry bags
+2026-11-01,Rent,28000,bank_transfer,Shop rent
+2026-11-02,Packaging,785,cash,Carry bags
+2026-11-03,Staff Bonus,12000,cash,Diwali bonus
+2026-11-05,Staff Salary,18000,cash,2 helpers
+2026-11-09,Packaging,757,cash,Carry bags
+2026-11-10,Electricity,4257,upi,BSES bill

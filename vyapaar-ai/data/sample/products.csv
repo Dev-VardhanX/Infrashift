@@ -1,0 +1,39 @@
+sku,name,category,mrp,cost_price,gst_rate,supplier,lead_time_days,reorder_level
+ATT01,Aashirvaad Atta 5kg,Staples,290,262,5,Gupta Traders,3,81
+RIC01,India Gate Basmati Rice 5kg,Staples,725,640,5,Gupta Traders,3,27
+DAL01,Toor Dal 1kg,Staples,165,148,5,Gupta Traders,3,63
+SUG01,Sugar 1kg,Staples,52,46,5,Gupta Traders,3,126
+SAL01,Tata Salt 1kg,Staples,28,24,0,Gupta Traders,3,72
+OIL01,Fortune Sunflower Oil 1L,Oil & Ghee,150,128,5,Gupta Traders,2,68
+OIL02,Saffola Gold Oil 1L,Oil & Ghee,195,172,5,Gupta Traders,2,30
+GHE01,Amul Ghee 1L,Oil & Ghee,640,585,5,Jain Distributors,2,27
+MLK01,Amul Taza Milk 500ml,Dairy & Eggs,29,27.5,0,Delhi Dairy Agency,1,240
+PNR01,Amul Paneer 200g,Dairy & Eggs,98,88,0,Delhi Dairy Agency,1,36
+EGG01,Eggs Tray (30),Dairy & Eggs,210,190,0,Delhi Dairy Agency,2,15
+BUT01,Amul Butter 500g,Dairy & Eggs,285,262,5,Delhi Dairy Agency,2,30
+BIS01,Parle-G 800g,Snacks & Biscuits,85,77,5,Jain Distributors,2,60
+BIS02,Good Day Cashew 250g,Snacks & Biscuits,50,44,5,Jain Distributors,2,53
+MAG01,Maggi Noodles 12-pack,Snacks & Biscuits,168,152,5,Jain Distributors,2,38
+SNK01,Haldiram Bhujia 400g,Snacks & Biscuits,105,93,5,Jain Distributors,2,38
+SNK02,Lays Classic 52g,Snacks & Biscuits,20,17.5,5,Jain Distributors,2,165
+CHO01,Cadbury Dairy Milk 52g,Sweets & Chocolates,50,43,5,Jain Distributors,2,90
+CHO02,Cadbury Celebrations 118g,Sweets & Chocolates,175,150,5,Jain Distributors,2,23
+SWT01,Haldiram Soan Papdi 250g,Sweets & Chocolates,120,102,5,Jain Distributors,2,15
+DRY01,Almonds 250g,Dry Fruits,245,205,5,Verma Dry Fruit House,3,27
+DRY02,Cashew 250g,Dry Fruits,295,250,5,Verma Dry Fruit House,3,23
+DRY03,Raisins 250g,Dry Fruits,110,90,5,Verma Dry Fruit House,3,18
+SOP01,Dettol Soap 3x75g,Personal & Home Care,135,118,5,Jain Distributors,2,38
+SHM01,Clinic Plus Shampoo 340ml,Personal & Home Care,210,184,5,Jain Distributors,2,15
+TPS01,Colgate Strong Teeth 200g,Personal & Home Care,120,104,5,Jain Distributors,2,38
+DET01,Surf Excel Easy Wash 1kg,Personal & Home Care,130,114,5,Jain Distributors,2,45
+HRP01,Harpic Toilet Cleaner 500ml,Personal & Home Care,98,84,18,Jain Distributors,2,23
+TEA01,Tata Tea Gold 500g,Beverages,310,275,5,Gupta Traders,3,36
+COF01,Nescafe Classic 100g,Beverages,340,300,18,Jain Distributors,3,18
+WAT01,Bisleri Water 1L,Beverages,20,14,18,Jain Distributors,1,180
+JUC01,Real Mango Juice 1L,Beverages,120,102,5,Jain Distributors,2,30
+SYR01,Rooh Afza 750ml,Beverages,245,212,5,Jain Distributors,2,23
+SYR02,Glucon-D Orange 500g,Beverages,160,140,18,Jain Distributors,2,23
+PUJ01,Earthen Diyas (12),Puja & Decor,60,38,0,Om Puja Bhandar,2,12
+PUJ02,Agarbatti Cycle Pure 100s,Puja & Decor,95,78,5,Om Puja Bhandar,2,23
+PUJ03,Rangoli Colour 500g,Puja & Decor,80,55,5,Om Puja Bhandar,2,8
+PUJ04,Tealight Candles 50pc,Puja & Decor,140,100,5,Om Puja Bhandar,2,8
