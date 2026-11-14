@@ -1,0 +1,14 @@
+# SQLite database
+vyapaar.db
+vyapaar.db*
+*.db
+
+# Python & tests
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
