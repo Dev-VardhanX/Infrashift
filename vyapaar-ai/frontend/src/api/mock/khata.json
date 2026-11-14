@@ -1,0 +1,67 @@
+{
+ "customers": [
+  {
+   "id": "C003",
+   "name": "Anil Gupta",
+   "phone": "9000000274",
+   "balance": 9685,
+   "days_since_payment": 108,
+   "over_limit": true,
+   "last_payment_date": "2026-07-28"
+  },
+  {
+   "id": "C010",
+   "name": "Meena Kohli",
+   "phone": "9000001233",
+   "balance": 8270,
+   "days_since_payment": 93,
+   "over_limit": true,
+   "last_payment_date": "2026-08-12"
+  },
+  {
+   "id": "C007",
+   "name": "Vikas Yadav",
+   "phone": "9000000822",
+   "balance": 4922,
+   "days_since_payment": 108,
+   "over_limit": false,
+   "last_payment_date": "2026-07-28"
+  },
+  {
+   "id": "C009",
+   "name": "Rajesh Jain",
+   "phone": "9000001096",
+   "balance": 2622,
+   "days_since_payment": 46,
+   "over_limit": false,
+   "last_payment_date": "2026-09-28"
+  },
+  {
+   "id": "C011",
+   "name": "Sandeep Arora",
+   "phone": "9000001370",
+   "balance": 2469,
+   "days_since_payment": 46,
+   "over_limit": false,
+   "last_payment_date": "2026-09-28"
+  },
+  {
+   "id": "C013",
+   "name": "Harish Chand",
+   "phone": "9000001644",
+   "balance": 1803,
+   "days_since_payment": 46,
+   "over_limit": false,
+   "last_payment_date": "2026-09-28"
+  },
+  {
+   "id": "C012",
+   "name": "Priya Nair",
+   "phone": "9000001507",
+   "balance": 1598,
+   "days_since_payment": 46,
+   "over_limit": false,
+   "last_payment_date": "2026-09-28"
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+{
+ "insights": [
+  {
+   "id": "khata_overdue:all",
+   "type": "khata_overdue",
+   "severity": "high",
+   "title": "7 customers owe Rs 31,369, all unpaid for 45+ days",
+   "impact_inr": 31369,
+   "evidence": {
+    "columns": [
+     "Customer",
+     "Balance (Rs)",
+     "Days since payment",
+     "Over limit"
+    ],
+    "rows": [
+     [
+      "Anil Gupta",
+      "9,685",
+      "108",
+      "Yes"
+     ],
+     [
+      "Meena Kohli",
+      "8,270",
+      "93",
+      "Yes"
+     ],
+     [
+      "Vikas Yadav",
+      "4,922",
+      "108",
+      "No"
+     ],
+     [
+      "Rajesh Jain",
+      "2,622",
+      "46",
+      "No"
+     ],
+     [
+      "Sandeep Arora",
+      "2,469",
+      "46",
+      "No"
+     ]
+    ]
+   },
+   "why": "Rule: balance > 0 and days since last payment > 45. Two customers are over the Rs 5,000 credit limit.",
+   "action": {
+    "label": "Send reminders",
+    "kind": "whatsapp_reminder",
+    "payload": {}
+   },
+   "as_of": "2026-11-13"
+  },
+  {
+   "id": "dead_stock:all",
+   "type": "dead_stock",
+   "severity": "high",
+   "title": "Rs 45,556 is locked in 3 slow-moving items",
+   "impact_inr": 45556,
+   "evidence": {
+    "columns": [
+     "Item",
+     "In stock",
+     "Sold last 30d"
+    ],
+    "rows": [
+     [
+      "Real Mango Juice 1L",
+      "96",
+      "4"
+     ],
+     [
+      "Rooh Afza 750ml",
+      "102",
+      "1"
+     ],
+     [
+      "Glucon-D Orange 500g",
+      "101",
+      "3"
+     ]
+    ]
+   },
+   "why": "Rule: stock > 0 and units sold in last 30 days <= 5% of stock on hand, not a festival item.",
+   "action": {
+    "label": "Stop reordering; discount or bundle",
+    "kind": "none",
+    "payload": {}
+   },
+   "as_of": "2026-11-13"
+  },
+  {
+   "id": "restock:GHE01",
+   "type": "restock",
+   "severity": "high",
+   "title": "Amul Ghee 1L has about 1.1 days of cover (lead time 2 days)",
+   "impact_inr": 14500,
+   "evidence": {
+    "columns": [
+     "Metric",
+     "Value"
+    ],
+    "rows": [
+     [
+      "Stock",
+      "7"
+     ],
+     [
+      "Daily demand",
+      "6.5"
+     ],
+     [
+      "Days of cover",
+      "1.1"
+     ],
+     [
+      "Lead time",
+      "2 days"
+     ]
+    ]
+   },
+   "why": "Rule: days of cover < lead time means CRITICAL.",
+   "action": {
+    "label": "Draft PO",
+    "kind": "draft_po",
+    "payload": {
+     "skus": [
+      "GHE01"
+     ]
+    }
+   },
+   "as_of": "2026-11-13"
+  },
+  {
+   "id": "margin_leak:OIL01",
+   "type": "margin_leak",
+   "severity": "medium",
+   "title": "Fortune Sunflower Oil now earns only 1.3% margin (was 10.4%)",
+   "impact_inr": 9200,
+   "evidence": {
+    "columns": [
+     "Metric",
+     "Before 15 Sep",
+     "Now"
+    ],
+    "rows": [
+     [
+      "Cost per unit",
+      "128.00",
+      "141.00"
+     ],
+     [
+      "Margin on taxable value",
+      "10.4%",
+      "1.3%"
+     ]
+    ]
+   },
+   "why": "Latest purchase cost rose 10% on 15 Sep; price is capped at MRP Rs 150. Rule: margin at latest cost dropped >= 5pp vs cost 60+ days ago. Negotiate cost with Gupta Traders (target about Rs 130) or push Saffola Gold (7.4% margin). Do not raise price above MRP.",
+   "action": {
+    "label": "Review price",
+    "kind": "none",
+    "payload": {}
+   },
+   "as_of": "2026-11-13"
+  },
+  {
+   "id": "expense_anomaly:electricity",
+   "type": "expense_anomaly",
+   "severity": "medium",
+   "title": "Electricity in Oct was Rs 9,718, 1.8x the usual Rs 5,305",
+   "impact_inr": 4413,
+   "evidence": {
+    "columns": [
+     "Month",
+     "Electricity (Rs)",
+     "Note"
+    ],
+    "rows": [
+     [
+      "Jun",
+      "5,327",
+      ""
+     ],
+     [
+      "Jul",
+      "5,744",
+      ""
+     ],
+     [
+      "Aug",
+      "5,305",
+      ""
+     ],
+     [
+      "Sep",
+      "4,340",
+      ""
+     ],
+     [
+      "Oct",
+      "9,718",
+      "Compressor fault - high bill"
+     ],
+     [
+      "Nov",
+      "4,257",
+      ""
+     ]
+    ]
+   },
+   "why": "Rule: monthly category total > 1.5x median of other months (and > Rs 1,000). Delivery Fuel in Oct (Rs 5,100 vs Rs 3,020) also flagged.",
+   "action": {
+    "label": "Check freezer compressor",
+    "kind": "none",
+    "payload": {}
+   },
+   "as_of": "2026-11-13"
+  },
+  {
+   "id": "festive_lift:dry_fruits",
+   "type": "festive_lift",
+   "severity": "low",
+   "title": "Dry Fruits sold 4.1x more in Diwali week, and stock ran low",
+   "impact_inr": 0,
+   "evidence": {
+    "columns": [
+     "Category",
+     "18-24 Oct",
+     "1-7 Nov",
+     "Lift"
+    ],
+    "rows": [
+     [
+      "Dry Fruits",
+      "Rs 14,185",
+      "Rs 57,630",
+      "4.1x"
+     ],
+     [
+      "Puja & Decor",
+      "Rs 8,715",
+      "Rs 35,135",
+      "4.0x"
+     ],
+     [
+      "Sweets & Chocolates",
+      "Rs 12,560",
+      "Rs 36,815",
+      "2.9x"
+     ]
+    ]
+   },
+   "why": "Rule: category revenue in festive window >= 2x prior equal window. Plan: order dry fruits and puja items 2 weeks earlier next year.",
+   "action": {
+    "label": "Noted",
+    "kind": "none",
+    "payload": {}
+   },
+   "as_of": "2026-11-13"
+  }
+ ]
+}
